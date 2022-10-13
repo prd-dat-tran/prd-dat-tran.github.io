@@ -1,1 +1,25 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Site with Widget</title>
+</head>
+<body>
+  <script type='text/javascript'>
+    var oliviaChatData = oliviaChatData || [];
+    var oliviaChatBaseUrl =  'https://stg.paradox.ai';
+    oliviaChatData.push(['setKey', 'czlxygymvwnkzuxbbyhw']);
+    oliviaChatData.push(['start']);
+    (function() {
+        var apply = document.createElement('script');
+        apply.type = 'text/javascript';
+        apply.async = true;
+        apply.src = 'https://d25zu39ynyitwy.cloudfront.net/static/site/js/widget-client.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(apply, s);
+    })();
+</script>
+</body>
+</html>
